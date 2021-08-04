@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" href="/favicon.png" />
-  <title><%= htmlWebpackPlugin.options.title %></title>
-</head>
-
-<body>
-  <div id="redwood-app">
-    <!-- Please keep the line below for prerender support. -->
-    <%= prerenderPlaceholder %>
-  </div>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <div id="redwood-app"></div>
+    <link
+      rel="stylesheet"
+      href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css"
+    />
+    <script
+      async
+      src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"
+    ></script>
+    <div
+      id="snipcart"
+      data-config-modal-style="side"
+      data-api-key="YmI4MDIwNzUtYmE4NS00MzAyLTkxYWItYWRlZTY5MjczMzEwNjM3NjM2MzU3NTY2MDExMjk3"
+      hidden
+    ></div>
+  </body>
 </html>
