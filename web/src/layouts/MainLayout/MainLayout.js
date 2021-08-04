@@ -6,6 +6,7 @@ const MainLayout = ({ children }) => {
     <Container
       sx={{
         maxWidth: 1024,
+        fontFamily: 'body',
       }}
     >
       <Header />
