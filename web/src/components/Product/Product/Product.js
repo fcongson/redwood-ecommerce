@@ -1,6 +1,7 @@
+import { Link, navigate, routes } from '@redwoodjs/router'
 import { useMutation } from '@redwoodjs/web'
 import { toast } from '@redwoodjs/web/toast'
-import { Link, routes, navigate } from '@redwoodjs/router'
+import BuyButton from 'src/components/Snipcart/BuyButton'
 
 const DELETE_PRODUCT_MUTATION = gql`
   mutation DeleteProductMutation($id: Int!) {
@@ -97,6 +98,15 @@ const Product = ({ product }) => {
         >
           Delete
         </button>
+        <BuyButton
+          id={product.id}
+          title={product.title}
+          price={product.price}
+          description={product.description}
+          image={product.image}
+          url={process.env.REDWOOD_ENV_BUY_BUTTON_URL}
+          path={`/products/${product.id}`}
+        />
       </nav>
     </>
   )

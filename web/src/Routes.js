@@ -16,8 +16,8 @@ const Routes = () => {
       <Set wrap={ProductsLayout}>
         <Route path="/products/new" page={ProductNewProductPage} name="newProduct" />
         <Route path="/products/{id:Int}/edit" page={ProductEditProductPage} name="editProduct" />
-        <Route path="/products/{id:Int}" page={ProductProductPage} name="product" />
-        <Route path="/products" page={ProductProductsPage} name="products" />
+        <Route path="/products/{id:Int}" page={ProductProductPage} name="product" prerender />
+        <Route path="/products" page={ProductProductsPage} name="products" prerender />
       </Set>
       <Route path="/contact" page={ContactPage} name="contact" />
       <Route path="/" page={HomePage} name="home" />

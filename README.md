@@ -28,6 +28,10 @@ yarn redwood dev
 
 Your browser should open automatically to `http://localhost:8910` to see the web app. Lambda functions run on `http://localhost:8911` and are also proxied to `http://localhost:8910/.redwood/functions/*`.
 
+## Local Development
+
+[Develop a Snipcart Powered Website Locally Using ngrok](https://snipcart.com/blog/develop-a-snipcart-powered-website-locally-using-ngrok)
+
 ## Deploy
 
 - [Deploy](https://redwoodjs.com/docs/deploy): deploy to Netlify.

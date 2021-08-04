@@ -56,7 +56,7 @@ const SingleProduct = ({ id, title, description, price, image, imageAlt }) => {
         description={description}
         image={image}
         url={process.env.REDWOOD_ENV_BUY_BUTTON_URL}
-        path="/store"
+        path={`/products/${id}`}
       />
     </div>
   )
