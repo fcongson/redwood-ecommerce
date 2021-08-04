@@ -40,13 +40,22 @@ const SingleProduct = ({ id, title, description, price, image, imageAlt }) => {
       >
         {description}
       </p>
+      <p
+        sx={{
+          fontFamily: 'heading',
+          fontSize: '2em',
+          textAlign: 'center',
+        }}
+      >
+        {price}
+      </p>
       <BuyButton
         id={id}
         title={title}
         price={price}
         description={description}
         image={image}
-        url="http://localhost:8910"
+        url={process.env.REDWOOD_ENV_BUY_BUTTON_URL}
         path="/store"
       />
     </div>
