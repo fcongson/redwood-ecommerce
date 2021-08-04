@@ -1,9 +1,11 @@
 -- CreateTable
 CREATE TABLE "Product" (
-    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "id" SERIAL NOT NULL,
     "title" TEXT NOT NULL,
     "description" TEXT NOT NULL,
     "price" TEXT NOT NULL,
     "image" TEXT NOT NULL,
-    "imageAlt" TEXT NOT NULL
+    "imageAlt" TEXT NOT NULL,
+
+    PRIMARY KEY ("id")
 );
