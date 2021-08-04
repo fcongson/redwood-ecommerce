@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
-import BuyButton from './snipcart/BuyButton'
+import BuyButton from './Snipcart/BuyButton'
 
 const SingleProduct = ({ id, title, description, price, image, imageAlt }) => {
   return (
