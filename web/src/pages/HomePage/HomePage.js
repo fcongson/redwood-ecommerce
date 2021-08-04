@@ -1,4 +1,5 @@
 /** @jsx jsx */
+import ProductsCell from 'src/components/Product/ProductsCell'
 import MainLayout from 'src/layouts/MainLayout/MainLayout'
 import { jsx } from 'theme-ui'
 
@@ -11,7 +12,7 @@ const HomePage = () => {
           fontWeight: 400,
         }}
       >
-        Super Duper Ecommerce Website
+        Camstack - Camera gear sold on the Jamstack
       </h2>
       <p
         sx={{
@@ -19,8 +20,9 @@ const HomePage = () => {
           fontWeight: 400,
         }}
       >
-        Some text here explaining how great your website is!
+        Lorem ipsum dolor sit amet buy some camera gear!
       </p>
+      <ProductsCell />
     </MainLayout>
   )
 }

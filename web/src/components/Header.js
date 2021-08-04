@@ -26,7 +26,7 @@ const Header = () => {
           }}
           to={routes.home()}
         >
-          Redwood - Snipcart
+          Camstack
         </Link>
       </h1>
       <nav
